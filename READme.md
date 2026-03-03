@@ -204,7 +204,7 @@ print(my_tuple)  # it will print (1, 2, 3, 'Hello', 4.5)
 print(my_tuple[0])  # it will print 1
 print(my_tuple[3])  # it will print 'Hello'
 
-# my_tuple[1] = 10  # This will raise a TypeError because tuples are immutable
+my_tuple[1] = 10  # This will raise a TypeError because tuples are immutable
 print(my_tuple)  # it will print (1, 2, 3, 'Hello', 4.5)
 
 # Tuple Methods
@@ -227,7 +227,8 @@ for item in my_tuple:
 # List Comprehension
 List comprehension is a concise way to create lists in Python. It allows you to generate a new list by applying an expression to each item in an existing iterable (like a list or range) and optionally filtering items based on a condition.
 for example
-# Creating a list of squares of numbers from 0 to 9
+
+Creating a list of squares of numbers from 0 to 9
 squares = [x**2 for x in range(10)]
 print(squares)  # it will print [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]   
 
@@ -423,7 +424,7 @@ Exception handling is a mechanism in Python that allows you to handle errors gra
 - finally: The code inside the finally block is executed regardless of whether an exception was raised or not.
 for example
 example:
-```python
+
 try:
     num1 = int(input("Enter a number: ")) 
     num2 = int(input("Enter another number: "))
@@ -438,7 +439,7 @@ else:
 finally:
     print("Execution completed.")
 
-# another example
+# Another example 
 try:
     x = 10 / 2
 except ZeroDivisionError:
@@ -473,7 +474,6 @@ def divide_numbers(num1, num2):
     return num1 / num2
 
 example:
-```python
 
 def check_age(age):
     if age < 0:
